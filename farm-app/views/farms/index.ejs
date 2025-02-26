@@ -1,0 +1,7 @@
+<h1>All Farms</h1>
+<ul>
+    <% farms.forEach(farm => { %>
+        <li><a href="/farms/<%= farm._id %>"><%= farm.name %></a></li>
+    <% }); %>
+</ul>
+<a href="/farms/new">Add a Farm</a>

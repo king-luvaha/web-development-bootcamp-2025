@@ -1,0 +1,13 @@
+<h1>Add a New Product to <%= farm.name %></h1>
+
+<form action="/farms/<%= farm._id %>/products" method="POST">
+    <label>Product Name:</label>
+    <input type="text" name="name" required>
+    
+    <label>Price:</label>
+    <input type="number" name="price" step="0.01" required>
+    
+    <button type="submit">Add Product</button>
+</form>
+
+<a href="/farms/<%= farm._id %>">Back to Farm</a>
